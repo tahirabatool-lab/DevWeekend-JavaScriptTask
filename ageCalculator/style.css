@@ -77,8 +77,6 @@ button {
     width: 100%;
     display: none;
 }
-
-
 @media (max-width: 480px) {
     .mainContainer {
         padding: 15px;
