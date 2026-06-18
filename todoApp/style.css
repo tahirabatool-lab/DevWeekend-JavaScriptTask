@@ -1,96 +1,127 @@
-body {
-    background-color: rgb(64, 148, 151);
-    height: 100vh;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(
+        135deg,
+        #4F9DA6,
+        #3D7EAA
+    );
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
 }
 
 .mainContainer {
-    text-align: center;
     background-color: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-    width: 90%;
-    max-width: 400px;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
-    font-size: 2rem;
-    color: #222;
+    color: #1F2937;
     margin-bottom: 25px;
-    font-family: Arial, sans-serif;
+    font-size: 2rem;
 }
 
 #taskinput {
-    width: 70%;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 16px;
-    border: 2px solid #333;
+    width: 75%;
+    padding: 12px;
+    border: 2px solid #D1D5DB;
+    border-radius: 10px;
     outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+#taskinput:focus {
+    border-color: #3D7EAA;
+    box-shadow: 0 0 8px rgba(61, 126, 170, 0.3);
 }
 
 #addbtn {
-    border: none;
-    cursor: pointer;
-    background-color: rgb(108, 87, 245);
+    background-color: #3D7EAA;
     color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 10px;
+    cursor: pointer;
     font-size: 16px;
-    padding: 10px 12px;
-    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
 #addbtn:hover {
-    opacity: 0.9;
+    background-color: #32698E;
     transform: translateY(-2px);
-    background-color: rgb(90, 70, 230);
+}
+
+#addbtn:active {
+    transform: translateY(0);
 }
 
 ul {
     list-style: none;
+    margin-top: 25px;
     padding: 0;
-    margin-top: 20px;
 }
 
 li {
-    background: #f4f4f4;
-    margin-top: 10px;
-    border-radius: 6px;
-    padding: 10px;
+    background-color: #F8FAFC;
+    border: 1px solid #E5E7EB;
+    padding: 12px 15px;
+    margin-top: 12px;
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     word-break: break-word;
+    transition: all 0.2s ease;
+}
+
+li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 li button {
-    background-color: crimson;
+    background-color: #EF4444;
     color: white;
     border: none;
-    padding: 8px 10px;
-    border-radius: 5px;
+    padding: 8px 12px;
+    border-radius: 6px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 li button:hover {
-    background-color: rgb(180, 0, 36);
+    background-color: #DC2626;
 }
+
 #emptyText {
-    text-align: center;
-    /* opacity: 0.6; */
-    margin-top: 15px;
-    color: #333;
-    display: block; /* important default state */
-    font-size: 18px;
+    margin-top: 20px;
+    color: #6B7280;
+    font-size: 16px;
 }
+
 @media (max-width: 480px) {
+
+    .mainContainer {
+        padding: 20px;
+    }
+
     #taskinput {
         width: 100%;
         margin-bottom: 10px;
-        box-sizing: border-box;
     }
 
     #addbtn {
@@ -99,7 +130,11 @@ li button:hover {
 
     li {
         flex-direction: column;
-        gap: 10px;
         align-items: flex-start;
+        gap: 10px;
+    }
+
+    li button {
+        width: 100%;
     }
 }
