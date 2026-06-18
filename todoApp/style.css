@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(64, 148, 151);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer {
+    text-align: center;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 25px;
+    font-family: Arial, sans-serif;
+}
+
+#taskinput {
+    width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: 2px solid #333;
+    outline: none;
+}
+
+#addbtn {
+    border: none;
+    cursor: pointer;
+    background-color: rgb(108, 87, 245);
+    color: white;
+    font-size: 16px;
+    padding: 10px 12px;
+    border-radius: 8px;
+}
+
+#addbtn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    background-color: rgb(90, 70, 230);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background: #f4f4f4;
+    margin-top: 10px;
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-break: break-word;
+}
+
+li button {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: rgb(180, 0, 36);
+}
+#emptyText {
+    text-align: center;
+    /* opacity: 0.6; */
+    margin-top: 15px;
+    color: #333;
+    display: block; /* important default state */
+    font-size: 18px;
+}
+@media (max-width: 480px) {
+    #taskinput {
+        width: 100%;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    #addbtn {
+        width: 100%;
+    }
+
+    li {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}
