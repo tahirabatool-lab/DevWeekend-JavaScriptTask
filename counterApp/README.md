@@ -15,6 +15,9 @@ A simple Counter Application built using HTML, CSS, and JavaScript.
 * CSS
 * JavaScript
 
+## Live Demo
+
+ https://dev-weekend-java-script-task.vercel.app/
 
 ## Project Structure
 

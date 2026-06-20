@@ -14,6 +14,10 @@ A simple To Do Application built using HTML, CSS, and JavaScript.
 * HTML
 * CSS
 * JavaScript
+ 
+## Live Demo
+
+ https://dev-weekend-java-script-task.vercel.app/
 
 ## Project Structure
 
